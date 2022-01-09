@@ -1,17 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
+const ProductContext = React.createContext();
 class ProductProvider extends React.Component {
-constructor(props) {
+  constructor(props) {
     super(props);
 
-    this.state = {
-    };
-}
+    this.state = {};
+  }
 
-    render() {
-        return <div></div>;
-    }
+  render() {
+    return (
+      <ProductContext.Provider value={"hello from context"}>{this.props.children}</ProductContext.Provider>
+    );
+  }
 }
 Context.defaultProps = defaultProps;
 // #endregion
