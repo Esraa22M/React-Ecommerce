@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-Ecommerce/static/css/main.ba0172de.css",
+    "main.js": "/React-Ecommerce/static/js/main.d8618dfd.js",
+    "static/media/Pand.png": "/React-Ecommerce/static/media/Pand.205d8339c3a332f1bdc4.png",
+    "index.html": "/React-Ecommerce/index.html",
+    "main.ba0172de.css.map": "/React-Ecommerce/static/css/main.ba0172de.css.map",
+    "main.d8618dfd.js.map": "/React-Ecommerce/static/js/main.d8618dfd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba0172de.css",
+    "static/js/main.d8618dfd.js"
+  ]
+}
