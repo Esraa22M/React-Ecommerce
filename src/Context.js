@@ -10,11 +10,13 @@ class ProductProvider extends React.Component {
 
   render() {
     return (
-      <ProductContext.Provider value={"hello from context"}>{this.props.children}</ProductContext.Provider>
+      <ProductContext.Provider value={"hello from context"}>
+        {this.props.children}
+      </ProductContext.Provider>
     );
   }
 }
-Context.defaultProps = defaultProps;
+const ProductConsumer = ProductContext.Consumer;
 // #endregion
 
-export default Context;
+export {ProductProvider , ProductConsumer};
