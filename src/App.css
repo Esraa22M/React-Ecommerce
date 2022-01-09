@@ -1,0 +1,28 @@
+:root {
+  --color-green-primary: #6ca329;
+  --color-white: #f3f3f3;
+  --color-dark: #212529;
+  --color-orange-darker: #E93E21;
+  --color-main-dark: #232528;
+}
+body {
+  /*To override bootstrap font*/
+  font-family: 'Oswald', sans-serif !important;
+  background-color: var(--color-white) !important;
+  color: var(--color-main-dark) !important;
+}
+.text-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--color-orange-darker);
+}
+.text-green-primary{
+  color :var(--color-green-primary);
+}
+.text-green-dark{
+  color:var(--color-green-darker);
+}
+.active{
+  border-bottom: 1px solid var(--color-orange-darker);
+}
