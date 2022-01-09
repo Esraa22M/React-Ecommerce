@@ -10,6 +10,7 @@ body {
   font-family: 'Oswald', sans-serif !important;
   background-color: var(--color-white) !important;
   color: var(--color-main-dark) !important;
+  height: 100%;
 }
 .text-title {
   font-family: "Be Vietnam Pro", sans-serif;

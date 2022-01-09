@@ -1,34 +1,22 @@
-import React from 'react';
-
-// #region constants
-
-// #endregion
-
-// #region styled-components
-
-// #endregion
-
-// #region functions
-
-// #endregion
-
-// #region component
-
-
-/**
- * 
- */
+import React from "react";
+import { Wrapper, PandaWrapper } from "./styles/Default.style";
+import PandaPageNotFound from "../assets/Machovka-panda.png";
 class Default extends React.Component {
-constructor(props) {
+  constructor(props) {
     super(props);
 
-    this.state = {
-    };
-}
+    this.state = {};
+  }
 
-    render() {
-        return <div><h1>Page Not Found</h1></div>;
-    }
+  render() {
+    return (
+        <Wrapper>
+            <PandaWrapper>4</PandaWrapper>
+            <div><img src={PandaPageNotFound} width={"400px"} height={"300px"}></img></div>
+            <PandaWrapper>4</PandaWrapper>
+        </Wrapper>
+      );
+  }
 }
 
 // #endregion

@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
@@ -47,6 +49,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
+    "react-app-rewired": "^2.1.11"
   }
 }
