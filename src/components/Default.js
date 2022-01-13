@@ -12,7 +12,7 @@ class Default extends React.Component {
     return (
         <Wrapper>
             <PandaWrapper>4</PandaWrapper>
-            <div><img src={PandaPageNotFound} width={"400px"} height={"300px"}></img></div>
+            <img src={PandaPageNotFound} width="40%" height={"20%"}></img>
             <PandaWrapper>4</PandaWrapper>
         </Wrapper>
       );

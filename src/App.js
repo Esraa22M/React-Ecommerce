@@ -8,6 +8,7 @@ import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
+import Footer from "./components/footer";
 import React from "react";
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="*" element={<Default/>}/>
 
     </Routes>
+    <Footer/>
    </>
   );
 }

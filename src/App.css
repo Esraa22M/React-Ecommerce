@@ -1,9 +1,14 @@
 :root {
-  --color-green-primary: #6ca329;
+  --color-blue-primary: #FFBF00;
   --color-white: #f3f3f3;
   --color-dark: #212529;
   --color-orange-darker: #E93E21;
   --color-main-dark: #232528;
+  --color-main-purple:#ab308a;
+}
+*{
+  padding: 0;
+  margin: 0;
 }
 body {
   /*To override bootstrap font*/
@@ -13,7 +18,8 @@ body {
   height: 100%;
 }
 .text-title {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Lobster', cursive;
+  padding: 50px;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: var(--color-orange-darker);
@@ -27,3 +33,16 @@ body {
 .active{
   border-bottom: 1px solid var(--color-orange-darker);
 }
+.background-dark{
+  background-color: var(--color-dark) !important;
+}
+.background-yellow{
+  background-color: var(--color-blue-primary) !important;
+  height: 100%;
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+

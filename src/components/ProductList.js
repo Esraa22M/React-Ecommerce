@@ -1,30 +1,23 @@
 import React from "react";
 import Product from "./Product";
 import Title from "./Title";
-import { ResturantProducts } from "../data";
 import { ProductConsumer } from "../Context";
 class ProductList extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      Products: ResturantProducts,
-    };
-  }
-
-  render() {
-    console.log(this.state.Products);
-
+   render() {
     return (
       <>
-        <div className="my-5">
-          <div className="container">
-            <Title name={"wake up little"} title={" sushi"}></Title>
+        <div className=" background-yellow h-100">
+          <div className="container pty-5">
+            <Title name={"wake up little"} title={" sushi"} className="p-5"></Title>
             <div className="row">
-              <ProductConsumer>
-                {(hello) => {
-                  return <h1>{hello}</h1>;
-                }}
+              <ProductConsumer className="row ">
+                {
+                  (value)=>{
+                    return value.products.map((product)=>{
+                      return <Product key={product.id} product={product}/>
+                    })
+                  }
+                }
               </ProductConsumer>
             </div>
           </div>

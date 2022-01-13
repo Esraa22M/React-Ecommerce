@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Product from "../Product";
 export let ButtonContainer = styled.button`
   text-transform:capitalize;
-  /* background-color:#E93E21; */
   background-color:var(--color-orange-darker);
   outline:0;
   border:0;
@@ -12,11 +11,15 @@ export let ButtonContainer = styled.button`
   padding:0 10px;
   line-height:40px;
   border-radius:2px;
-  transition: box-shadow .2s;
   cursor: pointer;
   &:focus{
    outline:none;
   }
+  &:hover{
+    background-color:var(--color-dark);
+    transition:0.3s ease-in-out;
+  }
+ 
 `
 export let ProductContainer = styled.span`
 &:hover{
