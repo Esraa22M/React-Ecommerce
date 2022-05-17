@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ProductConsumer } from "../Context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { ButtonContainer } from "./styles/Navbar.style";
+import  PropTypes  from "prop-types";
 import { ProductWrapper , CardFooterContainer } from "../components/styles/Product.style";
 class Product extends React.Component {
   constructor(props) {
@@ -44,7 +44,6 @@ class Product extends React.Component {
                 )}
               </ButtonContainer>
             </div>
-            {/* cart footer */}
             <CardFooterContainer className="card-footer d-flex justify-content-between">
                 <div>{title}</div>
                 <div>{price} $</div>
@@ -55,7 +54,17 @@ class Product extends React.Component {
     );
   }
 }
-
+Product.propTypes = {
+  product:PropTypes.shape(
+    {
+      id:PropTypes.number,
+      img:PropTypes.string,
+      title:PropTypes.string,
+      price:PropTypes.number,
+      inCart:PropTypes.bool
+    }
+  ).isRequired
+}
 // #endregion
 
 export default Product;

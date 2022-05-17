@@ -6,23 +6,35 @@ class ProductProvider extends React.Component {
     super(props);
 
     this.state = {
-      products: ResturantProducts,
+      products: [],
       detailProduct: detailProduct,
     };
   }
-  handleDetails = ()=>{
+  componentDidMount(){
+    this.setProducts();
+  }
+  setProducts = () => {
+    let tempProducts = [];
+    ResturantProducts.forEach((item) => {
+      const singleItem = { ...item };
+      tempProducts = [...tempProducts, singleItem];
+    });
+    this.setState({products:tempProducts})
+  };
+
+  handleDetails = () => {
     console.log("details");
-  }
-  handleAddToCart=()=>{
+  };
+  handleAddToCart = () => {
     console.log("Add to Cart");
-  }
+  };
   render() {
     return (
       <ProductContext.Provider
         value={{
-            ...this.state,
-          handleDetails:this.handleDetails,
-          handleAddToCart:this.handleAddToCart
+          ...this.state,
+          handleDetails: this.handleDetails,
+          handleAddToCart: this.handleAddToCart,
         }}
       >
         {this.props.children}

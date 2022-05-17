@@ -58,13 +58,16 @@ export let LinkContainer = styled.p`
 
 `
 export let OrangeDot = styled.span`
-    height: 25px;
-    margin:0 10px;
-    width: 25px;
-    text-align:center;
-    background-color:var(--color-blue-primary);
-    border-radius: 50%;
-    display: inline-block;
+   width: 25px;
+  height: 25px;
+  line-height: 25px;
+  padding:10px;
+  border-radius: 50%;
+  margin :0 10px;
+  font-size: 20px;
+  background-color: var(--color-blue-primary);
+  text-align: center;
+   
 `
 export let FormContainer = styled.div`
 margin-top:10px;
